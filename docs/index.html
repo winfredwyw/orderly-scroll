@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>间隔滚动</title>
+    <style>
+      /* #content {
+        height: 1400px;
+      } */
+
+      html,body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        overflow: hidden;
+      }
+
+      #content {
+        height: 100%;
+        overflow: auto;
+      }
+
+      #content2 {
+        height: 220px;
+        width: 400px;
+        overflow: auto;
+        overflow-y: hidden;
+      }
+
+      /* .content2-content {
+        height: 1000px;
+      } */
+
+      .content2-wrap {
+        width: 1100px;
+        height: 220px;
+        display: flex;
+      }
+
+      .content2-item {
+        height: 220px;
+        width: 100px;
+        margin-right: 10px;
+        background: red;
+      }
+
+      .item {
+        height: 200px;
+        background: #ddd;
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <!-- <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div> -->
+      <div id="content2">
+        <div class="content2-wrap">
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+          <div class="content2-item"></div>
+        </div>
+      </div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+      <div class="item">21</div>
+      <div class="item">22</div>
+      <div class="item">23</div>
+      <div class="item">24</div>
+      <div class="item">25</div>
+    </div>
+    <script src="./index.js"></script>    
+    <script>
+      new OrderlyScroll({
+        target: document.getElementById('content'),
+        interval_distance: 220
+      })
+
+      new OrderlyScroll({
+        target: document.getElementById('content2'),
+        interval_distance: 110,
+        isX: true
+      })
+    </script>
+  </body>
+</html>
