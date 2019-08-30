@@ -1,6 +1,6 @@
 ### OrderlyScroll 
 
-OrderlyScroll 函数， 引入该库后可使用
+[Example](https://winfredwyw.github.io/orderly-scroll/)，OrderlyScroll 函数， 引入该库后可使用
 
 ### 开始使用
 
